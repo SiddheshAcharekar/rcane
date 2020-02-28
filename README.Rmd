@@ -1,17 +1,26 @@
+---
+title: "README"
+date:  December 04, 2017
+output:
+  md_document:
+    variant: markdown_github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 <img src="man/figures/logo.png" />
 
-rcane
-=====
+# rcane 
 
 [![Build Status](https://travis-ci.org/sureshaks/rcane.svg?branch=akshay)](https://travis-ci.org/sureshaks/rcane)
 
-What is it?
------------
+## What is it?
 
 An R package to find parameter estimates of Linear Regression
 
-No seriously, what is it?
--------------------------
+## No seriously, what is it?
 
 This is what we did...
 
@@ -23,26 +32,24 @@ A little more info
 
 We start with arbitrary parameter estimates for linear regression and slide down to the optimal values.
 
-But how?
---------
+## But how?
 
 We use 4 different algorithms:
 
--   Batch Gradient Descent
+- Batch Gradient Descent
 
--   Stochastic Gradient Descent
+- Stochastic Gradient Descent
 
--   Mini-batch Gradient Descent
+- Mini-batch Gradient Descent
 
--   Coordinate Descent
+- Coordinate Descent
 
-Time for some Math
-------------------
+## Time for some Math 
 
 <img src="man/figures/dreadfulmath.png" align="center" />
 
 <table>
-<tr>
+  <tr>
     <th> 
       Batch
     </th>
@@ -52,9 +59,8 @@ Time for some Math
     <th>
       Coordinate
     </th>
-
-</tr>
-<tr>
+  </tr>  
+  <tr>
     <td>
       <img src="man/figures/batch.png" align="center" />
     </td>
@@ -64,37 +70,36 @@ Time for some Math
     <td>
       <img src="man/figures/coordinate.png" align="center" />
     </td>
-
-</tr>
+  </tr>
 </table>
 
-Package installation and usage
-------------------------------
 
-If you have R &gt;= 3.4.2, follow the instructions
 
--   Open R studio and run this on the console
+## Package installation and usage
 
-``` r
+If you have R >= 3.4.2, follow the instructions
+
+- Open R studio and run this on the console
+
+```{r eval=FALSE}
 install_github("sureshaks/rcane")
 ```
 
--   Nothing. You can just include it in the search path and use it
+- Nothing. You can just include it in the search path and use it
 
-``` r
+```{r eval=FALSE}
 library(rcane)
 ?rlm
 ```
 
-Who are we?
------------
+
+## Who are we?
 
 <table>
-<tr>
+  <tr>
     <td>Siddhesh Acharekar</td>
     <td>Shivayogi Biradar</td>
     <td>Hsiangwei Chao</td>
     <td>Akshay Suresh</td>
-
-</tr>
+  </tr>
 </table>
